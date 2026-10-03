@@ -1,0 +1,26 @@
+/* 2 egyenlo oszlop */
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 15px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.kiskep {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.kiskep:hover {
+  border: 2px solid #555;
+}
+/* Eltunteti a kepek alatti extra ures helyet */
+.kiskep img {
+  width: 100%;
+  border-radius: 8px;
+  display: block; 
+}
