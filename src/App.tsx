@@ -9,7 +9,7 @@ function App() {
   const [KepIndex, setKepIndex] = useState(0);
 
   //leptetes elore, ha az utolso kepen vagyunk, elejere ugrik, kulonben hozzaad egyet
-  const leptetesJobbra = () => {
+/*   const leptetesJobbra = () => {
     setKepIndex((aktualis) =>
       aktualis === adatLista.length - 1 ? 0 : aktualis - 1,
     );
@@ -19,8 +19,17 @@ function App() {
     setKepIndex((aktualis) =>
       aktualis === 0 ? adatLista.length - 1 : aktualis - 1,
     );
+  }; */
+//HIBAJAVITAS
+// A maradekos osztas (%) garantalja, hogy ha elerjük a lista veget, nullaról indul ujra
+  const leptetesJobbra = () => {
+    setKepIndex((aktualis) => (aktualis + 1) % adatLista.length);
   };
 
+  // Ha az elson vagyunk (0), visszaugrik az utolsora (hossz - 1), amugy csokkenti egygyel
+  const leptetesBalra = () => {
+    setKepIndex((aktualis) => (aktualis === 0 ? adatLista.length - 1 : aktualis - 1));
+  };
   return(
     <div className="App">
       <header className="App-header">
