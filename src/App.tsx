@@ -43,6 +43,8 @@ function App() {
         onKovetkezo={leptetesJobbra}
         onElozo={leptetesBalra}
         />
+        {/* kiskepek */}
+        <Galeria adatLista={adatLista} onKepKattintas={setKepIndex} />
       </main>
     </div>
   )
