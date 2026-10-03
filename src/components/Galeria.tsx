@@ -1,5 +1,6 @@
 import type {KepAdat} from "../adatok"
 import {KisKep} from "./KisKep"
+import './galeria.css'
 
 interface GaleriaProps{
     adatLista: KepAdat[]
@@ -8,7 +9,7 @@ interface GaleriaProps{
 export function Galeria({adatLista, onKepKattintas}:GaleriaProps){
     return (
         <div className="galeria">
-            //vegigmegyunk az adatokon es minden elemhez legeneralunk egy kiskep komponenst 
+            {/* vegigmegyunk az adatokon es minden elemhez legeneralunk egy kiskep komponenst  */}
             {adatLista.map((elem, index)=>(
                 <KisKep
                 key={index}
