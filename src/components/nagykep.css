@@ -1,11 +1,12 @@
   /* 3 oszlop: gomb - kep - gomb */
-.nagykep-kontener {
+.nagyKepKontener {
   display: grid;
-  grid-template-columns: max-content 1fr max-content; 
+  grid-template-columns: auto 1fr auto; 
   align-items: center;
   gap: 20px;
   width: 100%;
   max-width: 800px;
+  margin: 0 auto;
 }
 
 .fokep {
@@ -19,6 +20,8 @@
 
 .fokep img {
   width: 100%;
+  max-height: 450px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
