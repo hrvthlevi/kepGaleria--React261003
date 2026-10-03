@@ -1,4 +1,5 @@
 import type {KepAdat} from "../adatok"
+import './nagykep.css'
 
 //definialjuk mit var a NagyKep a szulotol
 interface NagyKepProps{

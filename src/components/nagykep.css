@@ -1,0 +1,37 @@
+  /* 3 oszlop: gomb - kep - gomb */
+.nagykep-kontener {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content; 
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.fokep {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.fokep img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: gray;
+  color: white;
+}
