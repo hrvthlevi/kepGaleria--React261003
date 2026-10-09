@@ -33,7 +33,7 @@ export function GaleriaProvider({ children }: GaleriaProviderProps) {
 
   //Az elsőről visszaugrik az utolsóra, amúgy csökkent eggyel:
   function leptetesBalra() {
-    setKepIndex((aktualis) => (aktualis === 0 ? adatLista.length - 1 : 1));
+    setKepIndex((aktualis) => (aktualis === 0 ? adatLista.length - 1 : aktualis - 1));
   }
   return (
     <GaleriaContext.Provider
