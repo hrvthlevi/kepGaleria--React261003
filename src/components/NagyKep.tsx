@@ -13,13 +13,9 @@ export function NagyKep() {
       {/* fokep es a hozzatartozo adatok */}
       <div className="fokep">
         <h3>{adat.alt}</h3>
+        <p className="latin">{adat.latinNev}</p>
         <img src={adat.src} alt={adat.alt} />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-          expedita eum pariatur deleniti repudiandae, dolorum molestias facere
-          aspernatur maiores corrupti blanditiis hic obcaecati sit perferendis
-          aperiam nihil mollitia veritatis laboriosam.
-        </p>
+        <p>{adat.leiras}</p>
       </div>
       {/* jobb oldali lepteto */}
       <button onClick={leptetesJobbra}>Következő</button>

@@ -20,7 +20,7 @@
 }
 
 .fokep h3{
-  text-transform: capitalize;
+/*   text-transform: capitalize; */
   color: #4b3f9e;
 }
 .fokep img {
@@ -32,6 +32,11 @@
 .fokep p{
   color: #666;
   font-size: 0.95rem;
+}
+.fokep .latin{
+  font-style: italic;
+  color: #888;
+  margin-top: -8px;
 }
 button {
   padding: 10px 15px;
