@@ -1,26 +1,38 @@
 /* 2 egyenlo oszlop */
 .galeria {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: repeat(4,1fr); 
   gap: 15px;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .kiskep {
-  border: 1px solid gray;
-  border-radius: 8px;
+  background: white;
+  border: 3px solid transparent;
+  border-radius: 12px;
   padding: 5px;
   cursor: pointer;
-  transition: border 0.2s;
+  transition: transform 0.2s, border-color 0.2s;
 }
 
 .kiskep:hover {
-  border: 2px solid #555;
+  transform: translateY(-4px);
+}
+.kiskep.aktiv{
+  border-color: #4b3f9e;
 }
 /* Eltunteti a kepek alatti extra ures helyet */
 .kiskep img {
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 8px;
-  display: block; 
+  display: block;
+}
+
+@media(max-width:640px) {
+  .galeria{
+    grid-template-columns: repeat(2,1fr);
+  }
 }

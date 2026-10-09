@@ -8,10 +8,13 @@ interface KisKepProps {
 }
 export function KisKep({ adat, index }: KisKepProps) {
   // a kiválasztást a contextből kapjuk
-  const { setKepIndex } = useGaleriaContext();
+  const { kepIndex, setKepIndex } = useGaleriaContext();
   return (
     //amikor a div-re kattintanak meghivjuk a szulotol kapott fgv-t a sajat indexunkkel
-    <div className="kiskep" onClick={() => setKepIndex(index)}>
+    <div
+      className={`kiskep ${index === kepIndex ? "aktiv" : ""}`}
+      onClick={() => setKepIndex(index)}
+    >
       <img src={adat.src} alt={adat.alt}></img>
     </div>
   );

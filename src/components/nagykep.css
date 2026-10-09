@@ -5,36 +5,57 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .fokep {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
-  border: 1px solid gray;
-  border-radius: 10px;
-  padding: 15px;
+  gap: 12px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(75, 63, 158, 0.15);
 }
 
+.fokep h3{
+  text-transform: capitalize;
+  color: #4b3f9e;
+}
 .fokep img {
   width: 100%;
   max-height: 450px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 12px;
 }
-
+.fokep p{
+  color: #666;
+  font-size: 0.95rem;
+}
 button {
   padding: 10px 15px;
   cursor: pointer;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: white;
+  border: none;
+  border-radius: 999px;
+  background-color: #4b3f9e;
+  color: white;
   font-weight: bold;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
 button:hover {
-  background-color: gray;
-  color: white;
+  background-color: #6a5acd;
+  transform: translateY(-2px);
+}
+
+/* telefonon a kep felul, a ket gomb alatta egymas mellett */
+@media(max-width:640px){
+  .nagyKepKontener{
+    grid-template-columns: 1fr 1fr;
+  }
+  .fokep{
+    grid-column: 1 / -1;
+    order: -1;
+  }
 }
