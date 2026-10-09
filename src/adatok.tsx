@@ -5,11 +5,11 @@ export interface KepAdat {
   latinNev: string;
   leiras: string;
 }
-
+const ALAP = import.meta.env.BASE_URL;
 //AI írta hozzá az adatokat!
 export const adatLista: KepAdat[] = [
   {
-    src: "./kepek/virag_1.jpeg",
+    src: `${ALAP}kepek/virag_1.jpeg`,
     alt: "Gyöngyvirág narancsvörös termései egy szár végén",
     nev: "Gyöngyvirág termése",
     latinNev: "Convallaria majalis",
@@ -17,7 +17,7 @@ export const adatLista: KepAdat[] = [
       "A gyöngyvirág tavasszal illatos, fehér harang alakú virágokat hoz, nyár végére pedig ezekből narancsvörös bogyók fejlődnek. A növény minden része mérgező, a bogyók különösen veszélyesek a gyerekekre.",
   },
   {
-    src: "./kepek/virag_2.jpeg",
+    src: `${ALAP}kepek/virag_2.jpeg`,
     alt: "Sárga gyújtoványfű virága közelről",
     nev: "Gyújtoványfű virága",
     latinNev: "Linaria vulgaris",
@@ -25,7 +25,7 @@ export const adatLista: KepAdat[] = [
       "A közönséges gyújtoványfű virága kétajkú, halványsárga, a közepén narancssárga dudorral. Útszéleken, árkok mentén és parlagon is gyakran találkozni vele.",
   },
   {
-    src: "./kepek/virag_3.jpeg",
+    src: `${ALAP}kepek/virag_3.jpeg`,
     alt: "Sárga gyújtoványfű virágzata",
     nev: "Gyújtoványfű virágzata",
     latinNev: "Linaria vulgaris",
@@ -33,7 +33,7 @@ export const adatLista: KepAdat[] = [
       "A gyújtoványfű vékony, keskeny levelű szárának végén hosszú fürtben nyílnak a sárga virágok. Nyár elejétől késő őszig virágzik, a méhek és poszméhek kedvelik.",
   },
   {
-    src: "./kepek/virag_4.jpeg",
+    src: `${ALAP}kepek/virag_4.jpeg`,
     alt: "Lila liliomszerű virág hosszú porzókkal",
     nev: "Lila liliomfélék virága", // nem találtam mi ez pontosan :(
     latinNev: "—",
